@@ -245,7 +245,7 @@ body {
     .hero-copy {
     position: absolute;
   bottom: 150px;
-  left: px;
+  left: 0px;
   z-index: 1;
   color: #fff;
   max-width: 700px;
@@ -262,7 +262,7 @@ body {
 .hero-bg {
   position: absolute;
   left: 0;        
-  right: -50px;      
+  right: -30px;      
   top: 0;
   bottom: 0;
   background: rgba(255, 255, 255, 0.5);
@@ -421,78 +421,31 @@ body {
 
 
     
-    @media (max-width: 768px) {
-      .page-wrapper {
-        height: auto;      
-        max-width: 100%;
-      }
-
-     
-      nav { padding: 0 16px; height: 48px; }
-      .logo { font-size: .95rem; }
-      .btn-outline { display: none; }
-      .btn-solid { font-size: .72rem; padding: 5px 13px; }
-
+  
     
-      .hero {
-        grid-template-columns: 1fr;
-        grid-template-rows: 220px auto;
-      }
-
-      .hero-visual { height: 220px; }
-
-      .hero-copy {
-        bottom: 12px; left: 14px; right: 14px; max-width: 100%;
-        padding: 12px 14px;
-      }
-      .hero-copy h1 { font-size: 1.08rem; }
-      .hero-copy p  { font-size: .73rem; margin-bottom: 9px; }
-      .btn-book     { font-size: .73rem; padding: 7px 14px; }
-
-      
-      .hero-form {
-        border-left: none;
-        border-top: 1px solid var(--border);
-        padding: 16px 14px;
-        justify-content: flex-start;
-      }
-      .form-title { font-size: .95rem; }
-      .form-sub   { font-size: .68rem; margin-bottom: 10px; }
-      .field        { margin-bottom: 7px; }
-      .field input  { padding: 7px 11px; font-size: .76rem; }
-      .cap-row      { margin-bottom: 7px; }
-      .cap-input    { padding: 7px 11px; font-size: .76rem; }
-      .cap-code     { min-width: 50px; font-size: .85rem; }
-      .consent      { margin-bottom: 9px; }
-      .btn-cta      { padding: 9px; font-size: .8rem; }
-
-      .stats-bar { height: 44px; --stat-h: 44px; }
-      .stat-item { padding: 0 18px; height: 44px; gap: 6px; }
-      .stat-item svg { width: 20px; height: 20px; }
-      .stat-txt { font-size: .7rem; }
-      .stat-txt strong { font-size: .75rem; }
-    }
-
-
-   .rct-section,
-  .smiles-section {
-    width: 100%;
-    max-width: 1440px;
-    margin: 0 auto;
-    background: var(--white, #fff);
-    padding: 48px 80px;
-  }
 
   @media (max-width: 768px) {
+    .btn-book{
+      display: none;
+    }
   .page-wrapper {
     height: auto;
     max-width: 100%;
   }
+  .desktop-text{
+    display: none;
+  }
+  .mobile-text{
+    display: inline;
+  }
+ 
+  
 
   nav { padding: 0 16px; height: 48px; }
   .logo { font-size: .95rem; }
-  .btn-outline { display: none; }
-  .btn-solid { font-size: .72rem; padding: 5px 13px; }
+  
+  .btn-outline { font-size: .72rem; padding: 5px 13px; }
+  
 
   .hero {
     grid-template-columns: 1fr;
@@ -517,24 +470,24 @@ body {
   .doc-img {
     position: absolute;
     bottom: 0;
-    left: 50%;
+    left: 65%;
     transform: translateX(-50%);
-    height: 95%;
+    height: 160%;
     width: auto;
     z-index: 2;
   }
 
   .hero-copy {
     bottom: 16px;
-    left: 12px;
-    right: 12px;
+    left: 0%;
+    right: 5px;
     max-width: 100%;
-    padding: 12px 14px;
-    bottom: 12px;
+    padding: 30px 14px;
+    bottom: 140px;
   }
-  .hero-copy h1 { font-size: 1.08rem; }
-  .hero-copy p  { font-size: .73rem; margin-bottom: 9px; }
-  .btn-book     { font-size: .73rem; padding: 7px 14px; }
+  .hero-copy h1 { font-size: 16px }
+  .hero-copy p  { font-size: 16px ; margin-bottom: 9px; }
+  .btn-book     { font-size: .73rem; padding: 8px 24px 8px 24px; }
 
   
   .hero-form {
@@ -558,6 +511,9 @@ body {
   .stat-item svg { width: 20px; height: 20px; }
   .stat-txt { font-size: .7rem; }
   .stat-txt strong { font-size: .75rem; }
+}
+@media screen (min-width:321px && max-width:420px) {
+  
 }
 
 @media (max-width: 430px) {
