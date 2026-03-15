@@ -296,6 +296,11 @@ body {
       text-decoration: none;
       transition: background .2s, transform .18s;
 }
+.btn-book-nav:hover{
+   background: #FFA040;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(244,124,32,0.28);
+}
     .btn-book {
       display: inline-flex; align-items: center; gap: 7px;
       padding: 8px 20px;
@@ -498,7 +503,7 @@ body {
   }
   .hero-copy h1 { font-size: 16px }
   .hero-copy p  { font-size: 16px ; margin-bottom: 9px; }
-  .btn-book     { font-size: .73rem; padding: 8px 24px 8px 24px; }
+  .btn-book     { font-size: .73rem; padding: 8px 24px 8px 24px; margin-left: -17px; }
 
   
   .hero-form {
@@ -554,6 +559,7 @@ body {
   .hero-visual {
     height: 394px;
   }
+  
 
  
   .nav-right .btn-book{
@@ -570,7 +576,7 @@ body {
   .hero-copy p  { font-size: .7rem; }
 }
 
-@media (max-width: 320px) {
+@media (max-width: 375px) {
   .hero-visual {
     height: 394px;
   }
